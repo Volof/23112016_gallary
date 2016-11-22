@@ -1,0 +1,93 @@
+*{
+	margin:0px;
+	padding: 0px;
+}
+
+html, body {
+	font-family: "Segoe UI Light", sans-serif;
+	height: 100%;
+}
+a {
+	text-decoration: none;
+}
+
+/* Wrapper
+-----------------------------------------------------------------------------*/
+.wrapper{
+	min-height: 100%;
+	margin-right: 12%;
+	margin-left: 12%;
+}
+
+/* Header
+-----------------------------------------------------------------------------*/
+.header {
+	height: 50px;
+	border: 2px solid;
+}
+
+/*Content
+-----------------------------------------------------------------------------*/
+.content {
+	padding-bottom: 100px;
+}
+
+.menu{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.menu_list{
+	float: left;
+}
+
+.menu:after {
+	content: '';
+	display: block;
+	clear: both; /*щоб картинки не ставали в одну лінію з меню*/
+}
+
+.flex-container {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  	display: flex; 
+  	flex-wrap: wrap;/*Свойство flex-wrap задает многострочную расстановку блоков по главной оси.*/
+  //justify-content: space-around; /*Вирінювання вдоль осі між елементами за рахунок відстані між ними*/
+  //align-items: flex-end; /* вертикальне вирівнювання*/
+}
+
+.flex-item{
+	width: 200px;
+	height: 200px;
+	margin-left: 50px;
+	margin-bottom: 50px;
+}
+.flex-item{
+	transition: box-shadow .3s linear;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	padding: 10px; /*відстань до рамки*/
+	overflow: hidden; /*не дає вилізти зображенню за межі рамки*/
+}
+.flex-item:hover{
+	box-shadow: 5px 5px 5px 0px rgba(8, 6, 7, .3);
+}
+
+img {
+	transition: transform, box-shadow .3s, .3s linear;
+}
+img:hover {
+	transform: scale(1.15);
+}
+
+/* Footer
+-----------------------------------------------------------------------------*/
+.footer {
+	height: 50px;
+	clear: both;
+	margin-top: -50px;
+	border: 2px solid;
+}
